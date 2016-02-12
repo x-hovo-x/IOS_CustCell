@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellWhenAppear" rowHeight="167" id="buk-al-P8H" customClass="TBCellWhenAppear" customModule="CustomTableCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="buk-al-P8H" id="rDy-Nm-WLI">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vL-PU-dbN">
+                        <rect key="frame" x="22" y="112" width="100" height="30"/>
+                        <color key="backgroundColor" red="0.76074686820000004" green="0.2691105915" blue="0.1067701474" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="QY5-QQ-fpT"/>
+                            <constraint firstAttribute="width" constant="100" id="qIK-JO-3yP"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="btnClicked:" destination="buk-al-P8H" eventType="touchUpInside" id="ekm-hx-7OE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJR-OY-gG0">
+                        <rect key="frame" x="434" y="112" width="100" height="30"/>
+                        <color key="backgroundColor" red="0.76074686820000004" green="0.2691105915" blue="0.1067701474" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="5bq-gA-Acz"/>
+                            <constraint firstAttribute="height" constant="30" id="ZbS-VP-uya"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="btnClicked:" destination="buk-al-P8H" eventType="touchUpInside" id="JYC-Eo-ZRd"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6vL-PU-dbN" secondAttribute="bottom" constant="24" id="ZlI-TC-kbK"/>
+                    <constraint firstAttribute="bottom" secondItem="XJR-OY-gG0" secondAttribute="bottom" constant="24" id="pny-mq-kdL"/>
+                    <constraint firstAttribute="trailing" secondItem="XJR-OY-gG0" secondAttribute="trailing" constant="66" id="xcW-0L-C07"/>
+                    <constraint firstItem="6vL-PU-dbN" firstAttribute="leading" secondItem="rDy-Nm-WLI" secondAttribute="leading" constant="22" id="xj6-e9-1wv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="428" y="-8.5"/>
+        </tableViewCell>
+    </objects>
+</document>
